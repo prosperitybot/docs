@@ -17,25 +17,18 @@ Discord asks for a detailed description, with links to images or video where pos
 ```txt
 This bot is a custom (white label) version of the Prosperity Bot.
 
-Prosperity is a levelling bot for Discord. Members earn XP for taking part in a
-server, level up over time, and are automatically granted roles at levels the
-server configures.
+Prosperity is a levelling bot for Discord. Members earn XP for taking part in a server, level up over time, and are automatically granted roles at levels the server configures.
 
 Core features include:
-- Message-based levelling: members earn XP for sending messages, subject to a
-  per-server cooldown, and level up as their XP accumulates.
-- Level roles: roles that are granted automatically when a member reaches a
-  configured level, with a choice of stacking or swapping roles as members climb.
+- Message-based levelling: members earn XP for sending messages, subject to a per-server cooldown, and level up as their XP accumulates.
+- Level roles: roles that are granted automatically when a member reaches a configured level, with a choice of stacking or swapping roles as members climb.
 - Leaderboard: a per-server ranking of members by XP.
-- Configurable XP: a per-server XP multiplier and cooldown so server owners can
-  tune progression.
+- Configurable XP: a per-server XP multiplier and cooldown so server owners can tune progression.
 - Exclusions: server owners can exclude specific channels or roles from earning XP.
 - Level-up notifications: a configurable channel and type for level-up messages.
-- Whitelabel branding: premium users can run the bot under their own name and
-  application.
+- Whitelabel branding: premium users can run the bot under their own name and application.
 
-The bot reacts to the fact that a member sent a message; it does not read or
-store message content.
+The bot reacts to the fact that a member sent a message; it does not read or store message content.
 
 Full documentation with screenshots is available at https://docs.prosperitybot.net
 ```
@@ -71,22 +64,14 @@ https://github.com/prosperitybot/legal/blob/main/PRIVACY.md
 ```txt
 The bot requires the Server Members intent to operate its core functionality:
 
-1. Resolving member roles to enforce ignored-role rules. Before awarding XP for a
-   message, the bot checks the author's roles against a server-defined ignore list
-   and skips members who hold an ignored role.
-2. Assigning and removing level roles on level-up. When a member reaches a
-   configured level, the bot grants the matching role and, in single-role mode,
-   removes the previous level role. This requires knowing the member's current roles.
-3. Enforcing command permissions. Administrative commands are gated on Manage
-   Server or Administrator, which is checked against the member running the command.
-4. Recording members when they join, so a member's levelling profile is ready from
-   their first message.
+1. Resolving member roles to enforce ignored-role rules. Before awarding XP for a message, the bot checks the author's roles against a server-defined ignore list and skips members who hold an ignored role.
+2. Assigning and removing level roles on level-up. When a member reaches a configured level, the bot grants the matching role and, in single-role mode, removes the previous level role. This requires knowing the member's current roles.
+3. Enforcing command permissions. Administrative commands are gated on Manage Server or Administrator, which is checked against the member running the command.
+4. Recording members when they join, so a member's levelling profile is ready from their first message.
 
-The bot does not use the Message Content intent and does not read or store message
-content. It only needs to know that a member was active, not what they wrote.
+The bot does not use the Message Content intent and does not read or store message content. It only needs to know that a member was active, not what they wrote.
 
-Without this intent, the bot cannot resolve member roles & permissions, which are
-fundamental to every operation.
+Without this intent, the bot cannot resolve member roles and permissions, which are fundamental to every operation.
 ```
 
 ### Screenshots or videos demonstrating your use case
@@ -118,8 +103,7 @@ No.
 **How do users contact you to request deletion of their activity data?**
 
 ```txt
-Users can request deletion of their data via emailing support@bhcloudlabs.com with
-the deletion request.
+Users can request deletion of their data via emailing support@bhcloudlabs.com with the deletion request.
 ```
 
 **Are you encrypting the data you store at rest?**
