@@ -1,0 +1,20 @@
+{
+  "name": "prosperity-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Documentation for the Prosperity Discord levelling bot",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.2.10",
+    "@fontsource-variable/geist": "^5.2.9",
+    "@fontsource/jetbrains-mono": "^5.2.8"
+  }
+}

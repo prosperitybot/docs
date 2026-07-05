@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# VitePress build output and cache
+.vitepress/dist/
+.vitepress/cache/
+
+# Local env
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
